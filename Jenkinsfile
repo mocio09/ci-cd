@@ -9,9 +9,6 @@ pipeline {
     }
 
     stage('Additional Step on Merge') {
-      when {
-        branch 'main'
-      }
       steps {
         echo 'Additional step executed on merge to master'
       }
